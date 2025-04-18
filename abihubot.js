@@ -19,7 +19,7 @@ sendButton.addEventListener("click", async () => {
     const res = await fetch(api_Url, {
       method: "POST",
       headers: {
-        "x-rapidapi-key": "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",
+        "x-rapidapi-key": "none",
         "x-rapidapi-host": "deepseek-v31.p.rapidapi.com",
         "Content-Type": "application/json",
       },
@@ -41,7 +41,6 @@ sendButton.addEventListener("click", async () => {
     const data = await res.json();
     console.log("API Response:", data);
 
-    // Remove "Thinking..." message
     removeLastBotMessage();
 
     const reply =
@@ -58,7 +57,6 @@ sendButton.addEventListener("click", async () => {
   }
 });
 
-// Append chat message to the chat content
 function appendMessage(sender, message) {
   const messageDiv = document.createElement("div");
   messageDiv.classList.add("message", sender);
@@ -69,7 +67,6 @@ function appendMessage(sender, message) {
   output.scrollTop = output.scrollHeight;
 }
 
-// Remove the last bot message (used for removing "Thinking..." placeholder)
 function removeLastBotMessage() {
   const botMessages = [...output.querySelectorAll(".message.bot")];
   if (botMessages.length > 0) {
