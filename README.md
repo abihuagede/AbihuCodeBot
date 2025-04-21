@@ -41,7 +41,7 @@ Fork the repository.
 📧 Contact
 Have questions or need help? Feel free to reach out:
 
-Email: your-email@example.com
+Email: abihuagede12@gmail.com
 GitHub: @abihuagede
 🌟 Thank you for visiting AbihuCodeBot!
 
